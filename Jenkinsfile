@@ -10,7 +10,7 @@ pipeline {
             }
         }
     }
-    stage('Build & Push Image') {
+    stage('Build Image') {
         environment { QUAY = credentials('QUAY_USER') }
         steps {
             sh '''
